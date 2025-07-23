@@ -10,5 +10,7 @@
   "dependencies": {
     "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
 }
