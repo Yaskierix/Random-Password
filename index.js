@@ -2,6 +2,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "/"];
 let randomIndex = null;
 let randomPassword = [];
+let output1 = document.querySelector("#output-el1");
 
 function generatePassword(){
  
@@ -9,11 +10,9 @@ function generatePassword(){
     randomIndex = Math.floor(Math.random() * characters.length)
     randomPassword.push(characters[randomIndex])
   }
-  
+  output1.textContent = randomPassword.join("");
+  randomPassword = [];
 }
 
-generatePassword();
 
-console.log(randomPassword.join(""));
 
-console.log(randomIndex)
