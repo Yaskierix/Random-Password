@@ -79,4 +79,9 @@ body{
     background: #273549;
     width: 100%;
     height: 40px;
+    color:#34d399;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
 }
