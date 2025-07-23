@@ -8,6 +8,13 @@ let randomPassword2 = [];
 let output1 = document.querySelector("#output-el1");
 let output2 = document.querySelector("#output-el2");
 
+[output1, output2].forEach((element) => {
+  element.addEventListener('click', () =>{
+    const text = element.textContent;
+    navigator.clipboard.writeText(text);
+  })
+})
+
 function generatePassword(){
   randomPassword1 = [];
   randomPassword2 = [];
