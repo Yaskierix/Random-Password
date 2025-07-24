@@ -57,7 +57,14 @@ body {
     input{
       width: 50px;
       height: 25px;
-      margin-top:5px
+      margin-top:10px;
+      border-radius:6px;
+      border: none;
+      background:#273549;
+      color:$color_1;
+      font-weight: bold;
+      font-size:18px;
+      text-align: center;
     }
   }
   button {
