@@ -1,21 +1,26 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" type='text/css'>
-    </head>
-    <body>
-        <div class="layout">
-            <div class="content">
-                <h1>Generate a <br><span>random password</span></h1>
-                <p>Never use an insecure password again.</p>
-                <button onclick="generatePassword()">Generate passwords</button>
-                <span></span>
-                <div class="outputs">
-                <span class="output" id="output-el1"></span>
-                <span class="output" id="output-el2"></span>
-            </div>
-            </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="content">
+        <h1>Generate a <br /><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <button onclick="generatePassword()">Generate passwords</button>
+        <span></span>
+        <div class="outputs">
+          <span class="output" id="output-el1" data-target="copied1"></span>
+          <span class="output" id="output-el2" data-target="copied2"></span>
         </div>
-        <script src="index.js" type="module"></script>
-    </body>
+        <div class="messages">
+            <p class="copied hidden" id="copied1"><svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM404.4 276.7L324.4 404.7C320.2 411.4 313 415.6 305.1 416C297.2 416.4 289.6 412.8 284.9 406.4L236.9 342.4C228.9 331.8 231.1 316.8 241.7 308.8C252.3 300.8 267.3 303 275.3 313.6L302.3 349.6L363.7 251.3C370.7 240.1 385.5 236.6 396.8 243.7C408.1 250.8 411.5 265.5 404.4 276.8z"/></svg>Copied</p>
+            <p class="copied hidden" id="copied2"><svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM404.4 276.7L324.4 404.7C320.2 411.4 313 415.6 305.1 416C297.2 416.4 289.6 412.8 284.9 406.4L236.9 342.4C228.9 331.8 231.1 316.8 241.7 308.8C252.3 300.8 267.3 303 275.3 313.6L302.3 349.6L363.7 251.3C370.7 240.1 385.5 236.6 396.8 243.7C408.1 250.8 411.5 265.5 404.4 276.8z"/></svg>Copied</p>
+        </div>
+        
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>

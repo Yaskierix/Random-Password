@@ -7,11 +7,22 @@ let randomPassword1 = [];
 let randomPassword2 = [];
 let output1 = document.querySelector("#output-el1");
 let output2 = document.querySelector("#output-el2");
+let copiedItem = document.querySelectorAll(".copied");
 
 [output1, output2].forEach((element) => {
   element.addEventListener('click', () =>{
     const text = element.textContent;
     navigator.clipboard.writeText(text);
+    [output1, output2].forEach((element) => element.classList.remove('border'));
+    element.classList.add('border');
+    const targetId = element.dataset.target;
+    copiedItem.forEach(copy =>{
+      if(copy.id === targetId){
+        copy.classList.remove('hidden');
+      } else {
+        copy.classList.add('hidden');
+      }
+    })
   })
 })
 
