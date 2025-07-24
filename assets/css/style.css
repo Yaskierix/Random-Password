@@ -64,7 +64,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
+  padding-left: 10px;
 }
 .content button {
   background: #34d399;
