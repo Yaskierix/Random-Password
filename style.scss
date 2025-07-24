@@ -66,23 +66,26 @@ body {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    .output {
-      border-radius: 6px;
-      background: #273549;
-      width: 100%;
-      height: 40px;
-      color: $color_2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .border {
-      border: 2px solid $color_2;
+    .output-container {
+		width: 100%;
+      .output {
+        border-radius: 6px;
+        background: #273549;
+        width: 100%;
+        height: 40px;
+        color: $color_2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .border {
+        border: 2px solid $color_2;
+      }
     }
   }
-  .messages {
+  .message {
     display: flex;
     flex-direction: row;
     .hidden {
@@ -103,5 +106,11 @@ body {
         height: 20px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .outputs {
+    flex-direction: column !important;
   }
 }

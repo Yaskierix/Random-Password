@@ -66,7 +66,10 @@ body {
   flex-direction: row;
   gap: 15px;
 }
-.content .outputs .output {
+.content .outputs .output-container {
+  width: 100%;
+}
+.content .outputs .output-container .output {
   border-radius: 6px;
   background: #273549;
   width: 100%;
@@ -78,17 +81,17 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
-.content .outputs .border {
+.content .outputs .output-container .border {
   border: 2px solid #34d399;
 }
-.content .messages {
+.content .message {
   display: flex;
   flex-direction: row;
 }
-.content .messages .hidden {
+.content .message .hidden {
   visibility: hidden;
 }
-.content .messages .copied {
+.content .message .copied {
   text-align: center;
   width: 100%;
   color: #34d399;
@@ -98,8 +101,14 @@ body {
   align-items: center;
   gap: 5px;
 }
-.content .messages .copied .icon {
+.content .message .copied .icon {
   color: #34d399;
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .outputs {
+    flex-direction: column !important;
+  }
 }/*# sourceMappingURL=style.css.map */
