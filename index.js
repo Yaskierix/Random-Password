@@ -31,8 +31,9 @@ let isButtonClicked = false;
 function generatePassword(){
   randomPassword1 = [];
   randomPassword2 = [];
+  let userPasswordLength = parseInt(document.querySelector("#userPasswordLength").value);
  
-  for (let i = 0; i < 15; i++){
+  for (let i = 0; i < userPasswordLength; i++){
     randomIndex = Math.floor(Math.random() * characters.length)
     randomPassword1.push(characters[randomIndex])
 

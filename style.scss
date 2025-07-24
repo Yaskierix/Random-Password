@@ -48,6 +48,18 @@ body {
     line-height: 28px;
     margin-bottom: 0;
   }
+  .user-input{
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+    color:$color_1;
+    font-size:18px;
+    input{
+      width: 50px;
+      height: 25px;
+      margin-top:5px
+    }
+  }
   button {
     background: #34d399;
     color: $color_1;
