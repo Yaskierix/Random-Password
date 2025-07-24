@@ -8,9 +8,11 @@ let randomPassword2 = [];
 let output1 = document.querySelector("#output-el1");
 let output2 = document.querySelector("#output-el2");
 let copiedItem = document.querySelectorAll(".copied");
+let isButtonClicked = false;
 
 [output1, output2].forEach((element) => {
   element.addEventListener('click', () =>{
+    if (!isButtonClicked) return;
     const text = element.textContent;
     navigator.clipboard.writeText(text);
     [output1, output2].forEach((element) => element.classList.remove('border'));
@@ -39,6 +41,7 @@ function generatePassword(){
   }
   output1.textContent = randomPassword1.join("");
   output2.textContent = randomPassword2.join("");
+  isButtonClicked = true;
 }
 
 window.generatePassword = generatePassword;
