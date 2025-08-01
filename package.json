@@ -1,6 +1,6 @@
 {
   "name": "random-password-generator",
-  "description": "https://scrimba.com/learn-javascript-c0v/~018/s0dsck3u31/head",
+  "description": "Simple password generator",
   "scripts": {
     "start": "vite",
     "dev": "vite",
